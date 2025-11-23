@@ -6,13 +6,13 @@ body {
 
 /* Card Component */
 .card {
-  @apply h-fit w-full flex justify-center items-center mt-5 px-10 rounded-2xl shadow-gray-700 shadow  from-slate-800 to-slate-950 bg-linear-to-b;
+  @apply h-fit min-h-[625px] w-full flex justify-center items-center mt-5 p-10 rounded-2xl shadow-gray-700 shadow  from-slate-800 to-slate-950 bg-linear-to-b whitespace-pre-line;
 }
 .cardTextSection {
-  @apply w-6/12 flex flex-col justify-center bg-black/5 rounded-2xl m-5 shadow shadow-gray-500
+  @apply w-6/12 flex flex-col justify-center bg-black/5 rounded-2xl m-5 shadow-2xl shadow-slate-700 border
 }
 .cardImageSection {
-  @apply relative w-6/12 h-72 ;
+  @apply relative w-6/12 h-[600px] ;
 }
 .cardImage {
   @apply rounded-4xl
@@ -21,6 +21,6 @@ body {
   @apply text-xl text-center text-slate-200 py-5 italic font-bold;
 }
 .cardDetail {
-  @apply  text-lg text-justify px-10 text-slate-200 leading-8;
+  @apply  text-lg text-justify px-10 text-slate-200 leading-8 pb-10;
 }
 

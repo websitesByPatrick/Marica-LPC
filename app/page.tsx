@@ -5,17 +5,10 @@ import HomeCard from "@/components/Cards/HomeCard";
 export default function Home() {
   return (
     <div className="h-screen bg-black max-w-[1200px] mx-auto py-10">
-      <div>
-        <Header />
-      </div>
 
-      <HomeCard
-        content={whatIsMentalHealth}
-      />
+      <HomeCard content={whatIsMentalHealth} />
 
-      <HomeCard
-        content={howACounselorCanHelp}
-      />
+      <HomeCard content={howACounselorCanHelp} reversed/>
     </div>
   );
 }

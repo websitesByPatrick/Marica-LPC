@@ -1,16 +1,18 @@
 import Image from "next/image";
-
+import React, { JSX } from "react";
 interface HomeCardProps {
-content: {
-  heading: string;
-  detail: string;
-  image: string;
-}
+  content: {
+    heading: string;
+    detail: string | JSX.Element;
+    image: string;
+  };
+  reversed?: boolean;
 }
 
-const HomeCard = ({ content }: HomeCardProps) => {
+const HomeCard = ({ content, reversed }: HomeCardProps) => {
   return (
-    <div className="card">
+    <div className={`card ${reversed ? "flex-row-reverse" : "flex-row"}`}>
+        
       <div className="cardTextSection">
         <h2 className="cardHeading">{content.heading}</h2>
         <p className="cardDetail">{content.detail}</p>
@@ -22,7 +24,7 @@ const HomeCard = ({ content }: HomeCardProps) => {
           src={content.image}
           alt={content.heading}
           fill
-          objectFit="cover"
+          objectFit="contain"
         />
       </div>
     </div>

@@ -1,12 +1,18 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <div className='bg-black border-b-2 border-white  text-slate-100 flex flex-col justify-center items-center'>
-        <h1 className='text-3xl'>Marica Nicholas, LPC-A</h1>
-        <h2 className='pl-4'>Serving.. Tomball, TX - Magnolia, TX </h2>
+    <div className={styles.div}>
+      <Navbar />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
+
+const styles = {
+  div: `from-slate-800 to-slate-950 bg-linear-330 border-b border-white  text-slate-100 flex flex-col justify-center items-center py-9 pr-15`,
+  h1: `text-3xl`,
+  h2: `text-lg mt-2 mb-6`,
+}
