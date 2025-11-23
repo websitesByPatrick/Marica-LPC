@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-black;
 }
+
+.card {
+  @apply h-[600] w-full flex justify-center items-center mt-5 px-10 rounded-2xl shadow-gray-700 shadow  from-slate-800 to-slate-950 bg-linear-to-b;
+}
+.cardTextSection {
+  @apply w-6/12 flex flex-col justify-center  text-slate-200;
+}
+.cardImageSection {
+  @apply relative w-6/12 h-72 ;
+}
+.cardImage {
+  @apply rounded-4xl
+}
+.cardHeading {
+  @apply text-xl text-center text-slate-200 py-5 italic font-bold;
+}
+.cardDetail {
+  @apply  text-lg text-justify px-10 text-slate-200 leading-8;
+}
+
