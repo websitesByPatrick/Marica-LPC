@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
-import WhatCanACounselorHelp from "@/components/WhatCanACounselorHelp";
-import WhatIsMentalHealth from "@/components/WhatIsMentalHealth";
+import { whatIsMentalHealth, howACounselorCanHelp } from "@/public/content";
+import HomeCard from "@/components/Cards/HomeCard";
 
 export default function Home() {
   return (
@@ -9,14 +9,13 @@ export default function Home() {
         <Header />
       </div>
 
-      <div className="bg-black text-slate-950">
-        <WhatIsMentalHealth />
-      </div>
+      <HomeCard
+        content={whatIsMentalHealth}
+      />
 
-      <div className="bg-black text-slate-950">
-        <WhatCanACounselorHelp/>
-      </div>
-      
+      <HomeCard
+        content={howACounselorCanHelp}
+      />
     </div>
   );
 }

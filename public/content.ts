@@ -1,14 +1,19 @@
+export const whatIsMentalHealth = {
+  heading: "What Is Mental Health?",
+  detail: `Mental health refers to a person's emotional, psychological, and
+          social well-being. It affects how individuals think, feel, and behave,
+          as well as how they handle stress, relate to others, and make
+          decisions. Good mental health helps people cope with life's
+          challenges, maintain relationships, perform daily activities, and
+          contribute to their communities. It is influenced by various factors,
+          including genetics, life experiences, and family history of mental
+          health issues.`,
+  image: "/mentalHealth1.webp",
+};
 
-import Image from "next/image";
-import therapyImage from "../public/therapySession.png";
-
-const WhatCanACounselorHelp = () => {
-  return (
-    <div className="card">
-      <div className="cardTextSection">
-        <h2 className="cardHeading">What Is Good Mental Health</h2>
-        <p className="cardDetail">
-          A mental health counselor serves as a compassionate guide, helping
+export const howACounselorCanHelp = {
+  heading: "How Can A Counselor Help?",
+  detail: `A mental health counselor serves as a compassionate guide, helping
           individuals navigate emotional, psychological, and behavioral
           challenges. Their role involves active listening, offering a safe,
           nonjudgmental space for clients to express their feelings and
@@ -21,20 +26,6 @@ const WhatCanACounselorHelp = () => {
           healthcare professionals when needed, ensuring comprehensive care.
           Their ultimate goal is to empower clients, fostering resilience and
           promoting mental well-being, so individuals can lead healthier, more
-          fulfilling lives.
-        </p>
-      </div>
-
-      <div className="cardImageSection">
-        <Image
-          className="cardImage"
-          src={therapyImage}
-          alt="What is Mental Health Image"
-          fill
-          objectFit="cover"
-        ></Image>
-      </div>
-    </div>
-  );
+          fulfilling lives.`,
+  image: "/therapySession.png",
 };
-export default WhatCanACounselorHelp;
