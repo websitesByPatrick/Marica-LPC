@@ -7,7 +7,7 @@ const Services = () => {
     <HomeCard
       content={{
         heading: `Professional Counseling Services`,
-        image: `/services.png`,
+        image: `/services.webp`,
         detail: 
           <List
             content={[
